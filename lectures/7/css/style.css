@@ -1,6 +1,19 @@
 #main {
-    /* add CSS here */
+    background-color: black;
+    text-align: center;
 }
-.pet {
-    /* add CSS here */
+.Husky {
+
+    border-style: dotted;
+    border-radius: 40px;
+    border-color: chocolate;
+    box-shadow: 6px -2px 25px white;
+    cursor: pointer;
+}
+.Text{
+    color: red;
+    text-shadow: 3px -2px 25px white;
+    margin: 5% 5% 5% 5%;
+    text-transform: uppercase;
+
 }
