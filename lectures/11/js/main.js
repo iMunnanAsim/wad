@@ -3,20 +3,26 @@
 //============================================
 
 
-/*var todos = [];
-function add() {
-    var task = document.getElementById("task").value;
-    todos.push(task);
-    document.getElementById('todos').innerText = todos;
-}*/
 
+/*
+ var todos = [];
+ function add() {
+     var task = document.getElementById("task").value;
+     todos.push(task);
+     document.getElementById('todos').innerText = todos;
+ }
+*/
+
+
+/*Elements are added with a separated comma and in a single line and doesn't save previous list when you refresh the webpage */
 
 //============================================
 //-----------  STEP - 2 ----------------------
 //============================================
 
 
-/*var todos = [];
+/*
+var todos = [];
 function add() {
     var task = document.getElementById('task').value;
     todos.push(task);
@@ -34,16 +40,18 @@ function show() {
         ul.appendChild(li);
     }
     document.getElementById('todos').appendChild(ul);
-}*/
+}
+*/
+
+/*It will show elements in a form of table and repeat the firstly added elements
+whenever you tries to added new elements after adding the first one and doesn't save th previous todolist when you refresh the webpage */
 
 
 //============================================
 //-----------  STEP - 3 ----------------------
 //============================================
 
-
-/*
-function getTodos() {
+/*function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -83,8 +91,8 @@ function show() {
     }
     document.getElementById('todos').appendChild(ul);
 }
-show();
-*/
+show();*/
+<!--Added elements in a table but show delete button with danger type but delete button not working yet and also save todolist -->
 
 
 
@@ -93,7 +101,8 @@ show();
 //============================================
 
 
-/*function getTodos() {
+/*
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -162,10 +171,11 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
+show();
+*/
 
 
-
+/*Elememts are in a table and delete button is working so you can delete any todolist with it and todolist remanins saved  /*
 
 
 //============================================
