@@ -50,7 +50,9 @@ function displayNext() {
                 quizOver = true;
             }
         }
-    } else {
+    }
+    else
+    {
         quizOver = false;
         document.getElementById("next-btn").innerText = "Next Question";
         resetQuiz();

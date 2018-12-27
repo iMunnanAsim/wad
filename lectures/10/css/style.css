@@ -4,7 +4,6 @@
     display: inline;
     width: 100%;
 }
-
 .col:hover{
     background-color: gray;
 }
@@ -14,19 +13,16 @@
         width: 50%;
     }
 }
-
 @media (min-width: 800px) {
     .col{
         width: 33.33%;
     }
 }
-
 @media (min-width: 1000px) {
     .col{
         width: 25%;
     }
 }
-
 @media (min-width: 1200px) {
     .col{
         width: 20%;
