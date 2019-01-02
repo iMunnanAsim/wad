@@ -20,6 +20,7 @@ function Category2()
     $Result = mysqli_query($DB,$Query);
     while ($Row = mysqli_fetch_assoc($Result))
     {
+        
         echo "<option>$Row[Title]</option>";
     }
 }
@@ -45,7 +46,7 @@ function Brands2()
     $Result = mysqli_query($DB,$Query);
     while ($Row = mysqli_fetch_assoc($Result))
     {
-        
+
         echo "<option>$Row[Title]</option>";
     }
 }
