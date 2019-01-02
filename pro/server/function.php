@@ -32,6 +32,7 @@ function Brands()
     $Result = mysqli_query($DB,$Query);
     while ($Row = mysqli_fetch_assoc($Result))
     {
+        
         echo "<li><a class = 'nav-link' href = '#'>$Row[Title]</a></li>";
     }
 }
