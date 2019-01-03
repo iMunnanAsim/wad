@@ -1,4 +1,23 @@
 <?php require "C:/xampp/htdocs/wad/pro/server/function.php" ;
+if(isset($_POST['insert_pro']))
+{
+    $pro_title = $_POST['pro_title'];
+    $pro_cat = $_POST['pro_cat'];
+    $pro_brand = $_POST['pro_brand'];
+    $pro_price = $_POST['pro_price'];
+    $pro_desc = $_POST['pro_desc'];
+    $pro_keyword = $_POST['pro_kw'];
+
+    $Query = "insert into product (pro_cat,pro_brand,pro_title,pro_price,pro_desc,pro_keyword)
+    values ('$pro_cat','$pro_brand','$pro_title','$pro_price','$pro_desc','$pro_keyword')";
+    echo $Query;
+    $Result = mysqli_query($DB,$Query);
+    if(!$Result)
+    {
+        echo "Not exe";
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +37,7 @@
 <body>
 <div class="container">
     <h1 class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-md-inline"> Add New </span> Product </h1>
-    <form>
+    <form method="post">
         <div class="row">
             <div class ="col-sm-2 ">
                 <label for="pro_title" class="float-sm-right float-md-right"> <span class="d-none d-sm-none d-md-inline"> Product </span> Title:</label>
@@ -118,7 +137,7 @@
         <div class="row my-3">
             <div class=""></div>
             <div class="">
-                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert Now </button>
+                <button type="submit" name="insert_pro" class="btn btn-primary btn-block"><i class="fas fa-plus"></i> Insert Now </button>
             </div>
         </div>
     </form>
