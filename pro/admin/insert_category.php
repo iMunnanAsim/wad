@@ -40,6 +40,7 @@ if(isset($_POST['insert_cat']))
 
             <div class="">
 
+                
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="far fa-comment-alt"></i></div>
