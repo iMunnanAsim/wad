@@ -23,9 +23,9 @@ function getBrands(){
 }
 
 function getPro(){
-    global $con;
-    $getProQuery = "select * from products order by RAND();";
-    $getProResult = mysqli_query($con,$getProQuery);
+    global $DB;
+    $getProQuery = "select * from product order by RAND();";
+    $getProResult = mysqli_query($DB,$getProQuery);
     while($row = mysqli_fetch_assoc($getProResult)){
         $pro_id = $row['pro_id'];
         $pro_title = $row['pro_title'];

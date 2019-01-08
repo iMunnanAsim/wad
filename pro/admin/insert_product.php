@@ -125,6 +125,7 @@ if(isset($_POST['insert_pro']))
             <div class="">
                 <label for="pro_desc" class="float-md-right"><span class="d-sm-none d-md-inline"> Product </span> Detail:</label>
             </div>
+
             <div class="">
                 <div class="input-group">
                     <div class="input-group-prepend">
