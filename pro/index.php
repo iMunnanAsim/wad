@@ -1,12 +1,11 @@
-
-<?php require "server/function.php" ;
-?>
 <!DOCTYPE html>
+<?php
+require "server/functions.php";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Tech Box</title>
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,8 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Old+Standard+TT">
 </head>
 <body>
-
-
 
 <header class="container-fluid">
     <div class="row">
@@ -70,19 +67,7 @@
                     Categories
                 </a>
                 <ul class="collapse show list-unstyled" id="homeSubmenu">
-                    <?php Category(); ?>
-                  <!--  <li>-->
-                    <!--    <a class="nav-link"  href="#">Laptops</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Computers</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Mobiles</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="#">Tablets</a>
-                    </li>-->
+                    <?php getCats(); ?>
                 </ul>
             </li>
             <li class="active">
@@ -91,19 +76,7 @@
                     Brands
                 </a>
                 <ul class="collapse show list-unstyled" id="pageSubmenu">
-                    <?php Brands(); ?>
-                  <!--  <li>
-                        <a class="nav-link" href="#">Apple</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Sony</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Dell</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Toshiba</a>
-                    </li>-->
+                    <?php getBrands(); ?>
                 </ul>
             </li>
             <li>
